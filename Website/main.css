@@ -1,0 +1,171 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e8e7e9;
+  margin: 0;
+  font-family: Verdana;
+}
+body .header {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  padding: 16px 0 0 0;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 624px) {
+  body .header {
+    padding: 16px 8px;
+  }
+}
+body .header .header-content {
+  display: block;
+  width: 100%;
+  max-width: 1140px;
+  height: 100%;
+  margin: auto;
+  color: #232527;
+}
+@media only screen and (min-width: 624px) {
+  body .header .header-content {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+  }
+}
+body .header .header-content .header_images {
+  text-decoration: none;
+}
+@media only screen and (min-width: 624px) {
+  body .header .header-content .header_images {
+    display: flex;
+    align-self: center;
+  }
+}
+body .header .header-content .header_images .mm-title-img {
+  display: block;
+  margin: auto;
+  height: 45px;
+}
+@media only screen and (min-width: 624px) {
+  body .header .header-content .header_images .mm-title-img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body .header .header-content .header_images .mm-title-img {
+    display: block;
+  }
+}
+body .header .header-content .header_images .mm-title-img-small {
+  display: none;
+  height: 45px;
+}
+@media only screen and (min-width: 624px) {
+  body .header .header-content .header_images .mm-title-img-small {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body .header .header-content .header_images .mm-title-img-small {
+    display: none;
+  }
+}
+body .header .header-content .nav-bar {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+@media only screen and (min-width: 768px) {
+  body .header .header-content .nav-bar {
+    display: flex;
+    align-self: center;
+    margin: 0;
+  }
+}
+body .header .header-content .nav-bar .nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body .header .header-content .nav-bar .nav-list li {
+  display: inline;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.5s;
+}
+body .header .header-content .nav-bar .nav-list li:hover {
+  background-color: #ff0000;
+  transition: background-color 0.5s;
+}
+body .header .header-content .nav-bar .nav-list li a {
+  color: #232527;
+  text-decoration: none;
+}
+body .header .header-content .contact-us {
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 16px;
+  right: 16px;
+}
+@media only screen and (min-width: 624px) {
+  body .header .header-content .contact-us {
+    position: relative;
+    top: unset;
+    right: unset;
+    margin: 0;
+    display: flex;
+    align-self: flex-start;
+  }
+}
+body .header .header-content .contact-us .discord-member-count {
+  position: absolute;
+  left: -1px;
+  align-self: center;
+  background-color: #232527;
+  border-radius: 50%;
+  color: #e9ecee;
+  height: 18px;
+  width: 18px;
+  font-size: 8px;
+  font-family: Verdana;
+  text-align: center;
+  line-height: 16px;
+}
+body .header .header-content .contact-us .discord-icon {
+  width: 42px;
+}
+body .header .header-content .contact-us .contact-us-link {
+  align-self: center;
+  color: #232527;
+  display: flex;
+  font-family: Verdana;
+  font-weight: bold;
+  text-decoration: none;
+}
+body .header .header-content .contact-us .contact-us-text {
+  display: none;
+}
+@media only screen and (min-width: 624px) {
+  body .header .header-content .contact-us .contact-us-text {
+    display: flex;
+    align-self: center;
+  }
+}
+body .page-body {
+  overflow: auto;
+  margin: auto;
+  max-width: 1024px;
+}
+body .page-body .card {
+  background-color: #e7e6e8;
+}/*# sourceMappingURL=main.css.map */
