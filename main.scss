@@ -28,6 +28,7 @@ body {
   background-color: $background;
   margin: 0;
   font-family: $font-1;
+  color: $text-primary;
 
   .header {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -44,7 +45,6 @@ body {
       max-width: 1140px;
       height: 100%;
       margin: auto;
-      color: $text-primary;
 
       @media #{$tablet-medium-up} {
         display: flex;
@@ -63,6 +63,7 @@ body {
         .mm-title-img {
           display: block;
           margin: auto;
+          user-select: none;
           height: 30px;
 
           @media #{$tablet-medium-up} {
@@ -77,6 +78,7 @@ body {
 
         .mm-title-img-small {
           display: none;
+          user-select: none;
           height: 45px;
 
           @media #{$tablet-medium-up} {
@@ -112,8 +114,13 @@ body {
             font-weight: bold;
             font-size: 16px;
             padding: 8px 16px;
+            margin: 4px 0;
             border-radius: 8px;
             transition: background-color 0.5s;
+
+            @media #{$tablet-medium-up} {
+              margin: 0;
+            }
 
             &:hover {
               background-color: $mm-red;
@@ -155,7 +162,6 @@ body {
           height: 18px;
           width: 18px;
           font-size: 8px;
-          font-family: $font-1;
           text-align: center;
           line-height: 16px;
         }
@@ -168,7 +174,6 @@ body {
           align-self: center;
           color: $text-primary;
           display: flex;
-          font-family: $font-1;
           font-weight: bold;
           text-decoration: none;
         }
@@ -191,6 +196,20 @@ body {
     max-width: 1140px;
     padding: 32px;
 
+    .splash {
+      margin: 48px auto;
+
+      .splash-heading {
+        text-align: center;
+        font-weight: bolder;
+      }
+      .splash-subheading {
+        text-align: center;
+        font-weight: normal;
+        font-size: 20px;
+      }
+    }
+
     .card {
       background-color: $background-light;
       border-radius: 0.25rem;
@@ -201,7 +220,6 @@ body {
         padding: 16px;
 
         .card-title {
-          font-family: $font-1;
         }
       }
     }

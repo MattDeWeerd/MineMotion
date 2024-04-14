@@ -6,6 +6,7 @@ body {
   background-color: #e8e7e9;
   margin: 0;
   font-family: Verdana;
+  color: #232527;
 }
 body .header {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -23,7 +24,6 @@ body .header .header-content {
   max-width: 1140px;
   height: 100%;
   margin: auto;
-  color: #232527;
 }
 @media only screen and (min-width: 624px) {
   body .header .header-content {
@@ -44,6 +44,9 @@ body .header .header-content .header_images {
 body .header .header-content .header_images .mm-title-img {
   display: block;
   margin: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   height: 30px;
 }
 @media only screen and (min-width: 624px) {
@@ -59,6 +62,9 @@ body .header .header-content .header_images .mm-title-img {
 }
 body .header .header-content .header_images .mm-title-img-small {
   display: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   height: 45px;
 }
 @media only screen and (min-width: 624px) {
@@ -97,8 +103,14 @@ body .header .header-content .nav-bar .nav-list li {
   font-weight: bold;
   font-size: 16px;
   padding: 8px 16px;
+  margin: 4px 0;
   border-radius: 8px;
   transition: background-color 0.5s;
+}
+@media only screen and (min-width: 624px) {
+  body .header .header-content .nav-bar .nav-list li {
+    margin: 0;
+  }
 }
 body .header .header-content .nav-bar .nav-list li:hover {
   background-color: #ff0000;
@@ -137,7 +149,6 @@ body .header .header-content .contact-us .discord-member-count {
   height: 18px;
   width: 18px;
   font-size: 8px;
-  font-family: Verdana;
   text-align: center;
   line-height: 16px;
 }
@@ -148,7 +159,6 @@ body .header .header-content .contact-us .contact-us-link {
   align-self: center;
   color: #232527;
   display: flex;
-  font-family: Verdana;
   font-weight: bold;
   text-decoration: none;
 }
@@ -167,6 +177,18 @@ body .page-body {
   max-width: 1140px;
   padding: 32px;
 }
+body .page-body .splash {
+  margin: 48px auto;
+}
+body .page-body .splash .splash-heading {
+  text-align: center;
+  font-weight: bolder;
+}
+body .page-body .splash .splash-subheading {
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+}
 body .page-body .card {
   background-color: #e7e6e8;
   border-radius: 0.25rem;
@@ -175,7 +197,4 @@ body .page-body .card {
 }
 body .page-body .card .card-header {
   padding: 16px;
-}
-body .page-body .card .card-header .card-title {
-  font-family: Verdana;
 }/*# sourceMappingURL=main.css.map */
