@@ -4,7 +4,8 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
 }
 
@@ -202,13 +203,15 @@ body .page-body .splash .splash-heading {
   align-self: center;
   margin-bottom: 0;
   font-size: 36px;
-  width: 775px;
+  max-width: 775px;
+  width: 100%;
 }
 body .page-body .splash .splash-subheading {
   text-align: center;
   font-weight: normal;
   font-size: 20px;
   margin-top: 8px;
+  margin-bottom: 16px;
   width: 100%;
 }
 body .page-body .splash .button-wrapper {
@@ -259,14 +262,56 @@ body .page-body .splash .button-wrapper .our-work-wrapper .down-arrow-icon {
 body .page-body .splash .button-wrapper .our-work-wrapper:hover {
   background-color: #232527;
 }
+body .page-body .card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
 body .page-body .card .card-header {
-  background-color: red;
+  display: flex;
+  margin-bottom: 12px;
+}
+body .page-body .card .card-header .icon-container {
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+body .page-body .card .card-header .icon-container.blue {
+  background-color: rgba(148, 221, 255, 0.514);
+  box-shadow: 0 0 10px rgba(180, 231, 255, 0.918);
+}
+body .page-body .card .card-header .icon-container.green {
+  background-color: rgba(148, 255, 157, 0.514);
+  box-shadow: 0 0 10px rgba(180, 255, 186, 0.918);
+}
+body .page-body .card .card-header .icon-container.yellow {
+  background-color: rgba(255, 253, 148, 0.514);
+  box-shadow: 0 0 10px rgba(255, 254, 180, 0.918);
+}
+body .page-body .card .card-header .card-icon {
+  width: 100%;
+}
+body .page-body .card .card-header .card-title {
+  font-size: 24px;
+  line-height: 36px;
 }
 body .page-body .card .card-body {
-  background-color: #e7e6e8;
+  display: flex;
+  background-color: rgb(241, 241, 241);
   border-radius: 0.25rem;
   box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.08);
   margin-bottom: 16px;
+  padding: 16px;
+}
+body .page-footer {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
 }
 
 @keyframes pulse-border {
