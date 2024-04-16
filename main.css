@@ -10,43 +10,39 @@ p {
 }
 
 body {
-  background-color: #e8e7e9;
+  background-color: #171818;
   margin: 0;
-  font-family: Verdana;
-  color: #232527;
+  font-family: Montserrat;
+  color: #fff;
+  padding-top: 70px;
 }
 body .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  height: 100%;
   padding: 16px 0 0 0;
-}
-@media only screen and (min-width: 624px) {
-  body .header {
-    padding: 16px 8px;
-  }
+  background-color: #171818;
 }
 body .header .header-content {
-  display: block;
-  width: 100%;
-  max-width: 1140px;
-  height: 100%;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 0 20px;
 }
 @media only screen and (min-width: 624px) {
   body .header .header-content {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     vertical-align: middle;
   }
 }
 body .header .header-content .header_images {
+  display: flex;
   text-decoration: none;
-}
-@media only screen and (min-width: 624px) {
-  body .header .header-content .header_images {
-    display: flex;
-    align-self: center;
-  }
+  width: 300px;
 }
 body .header .header-content .header_images .mm-title-img {
   display: block;
@@ -61,7 +57,7 @@ body .header .header-content .header_images .mm-title-img {
     display: none;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 960px) {
   body .header .header-content .header_images .mm-title-img {
     display: block;
     height: 45px;
@@ -79,7 +75,7 @@ body .header .header-content .header_images .mm-title-img-small {
     display: block;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 960px) {
   body .header .header-content .header_images .mm-title-img-small {
     display: none;
   }
@@ -88,19 +84,12 @@ body .header .header-content .nav-bar {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
-  margin: auto;
-}
-@media only screen and (min-width: 768px) {
-  body .header .header-content .nav-bar {
-    display: flex;
-    align-self: center;
-    margin: 0;
-  }
+  margin: 8px auto 16px auto;
 }
 body .header .header-content .nav-bar .nav-list {
   display: flex;
   justify-content: space-between;
-  width: 310px;
+  width: 350px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -109,65 +98,60 @@ body .header .header-content .nav-bar .nav-list li {
   display: inline;
   font-weight: bold;
   font-size: 16px;
-  padding: 8px 16px;
   margin: 4px 0;
   border-radius: 8px;
-  transition: background-color 0.5s;
 }
 @media only screen and (min-width: 624px) {
   body .header .header-content .nav-bar .nav-list li {
     margin: 0;
   }
 }
-body .header .header-content .nav-bar .nav-list li:hover {
-  background-color: #ff0000;
-  transition: background-color 0.5s;
-}
 body .header .header-content .nav-bar .nav-list li a {
-  color: #232527;
+  color: #fff;
   text-decoration: none;
+  transition: color 0.5s;
+}
+body .header .header-content .nav-bar .nav-list li a:hover {
+  color: #ff0000;
+  transition: color 0.5s;
 }
 body .header .header-content .contact-us {
-  display: block;
-  position: absolute;
-  margin: auto;
-  width: -moz-fit-content;
-  width: fit-content;
-  top: 8px;
-  right: 8px;
+  display: none;
 }
 @media only screen and (min-width: 624px) {
   body .header .header-content .contact-us {
-    position: relative;
-    top: unset;
-    right: unset;
-    margin: 0;
     display: flex;
-    align-self: flex-start;
+    flex-direction: column;
+    align-content: end;
+    width: 300px;
+    margin: 0;
   }
 }
-body .header .header-content .contact-us .discord-member-count {
+body .header .header-content .contact-us .contact-us-link {
+  align-self: flex-end;
+  color: #fff;
+  display: flex;
+  font-weight: bold;
+  text-decoration: none;
+}
+body .header .header-content .contact-us .contact-us-link .discord-info {
+  position: relative;
+}
+body .header .header-content .contact-us .contact-us-link .discord-info .discord-member-count {
   position: absolute;
   left: -1px;
   align-self: center;
-  background-color: #232527;
+  background-color: #fff;
   border-radius: 50%;
-  color: #e9ecee;
+  color: #000;
   height: 18px;
   width: 18px;
   font-size: 8px;
   text-align: center;
   line-height: 16px;
 }
-body .header .header-content .contact-us .discord-icon {
+body .header .header-content .contact-us .contact-us-link .discord-info .discord-icon {
   width: 42px;
-}
-body .header .header-content .contact-us .contact-us-link {
-  align-self: center;
-  color: #232527;
-  display: flex;
-  font-weight: bold;
-  text-decoration: none;
 }
 body .header .header-content .contact-us .contact-us-text {
   display: none;
@@ -181,8 +165,6 @@ body .header .header-content .contact-us .contact-us-text {
 body .page-body {
   overflow: auto;
   margin: auto;
-  max-width: 1140px;
-  padding: 32px;
 }
 body .page-body .splash {
   display: flex;
@@ -190,7 +172,8 @@ body .page-body .splash {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  margin: 48px auto;
+  margin: 76px auto 152px auto;
+  padding: 32px;
 }
 body .page-body .splash .splash-image-wrapper {
   display: flex;
@@ -199,10 +182,10 @@ body .page-body .splash .splash-image-wrapper {
 }
 body .page-body .splash .splash-heading {
   text-align: center;
-  font-weight: bolder;
+  font-weight: bold;
   align-self: center;
   margin-bottom: 0;
-  font-size: 36px;
+  font-size: 40px;
   max-width: 775px;
   width: 100%;
 }
@@ -211,8 +194,9 @@ body .page-body .splash .splash-subheading {
   font-weight: normal;
   font-size: 20px;
   margin-top: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   width: 100%;
+  color: #959595;
 }
 body .page-body .splash .button-wrapper {
   display: flex;
@@ -228,7 +212,6 @@ body .page-body .splash .button-wrapper .chat-with-us-wrapper {
   padding: 12px;
   border-radius: 8px;
   background-color: #13aa52;
-  border: 1px solid #e9ecee;
   animation: pulse-border 2s infinite;
   transition: background-color 0.3s;
 }
@@ -248,8 +231,7 @@ body .page-body .splash .button-wrapper .our-work-wrapper {
   color: #fff;
   padding: 12px;
   border-radius: 8px;
-  background-color: #434547;
-  border: 1px solid #e9ecee;
+  background-color: #292b2b;
   transition: background-color 0.3s;
 }
 body .page-body .splash .button-wrapper .our-work-wrapper .our-work {
@@ -260,48 +242,28 @@ body .page-body .splash .button-wrapper .our-work-wrapper .down-arrow-icon {
   width: 16px;
 }
 body .page-body .splash .button-wrapper .our-work-wrapper:hover {
-  background-color: #232527;
+  background-color: #fff;
 }
 body .page-body .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 32px;
+  padding: 16px;
+}
+body .page-body .card.light {
+  background-color: #292b2b;
 }
 body .page-body .card .card-header {
   display: flex;
+  text-align: center;
   margin-bottom: 12px;
 }
-body .page-body .card .card-header .icon-container {
-  width: 36px;
-  height: 36px;
-  margin-right: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-}
-body .page-body .card .card-header .icon-container.blue {
-  background-color: rgba(148, 221, 255, 0.514);
-  box-shadow: 0 0 10px rgba(180, 231, 255, 0.918);
-}
-body .page-body .card .card-header .icon-container.green {
-  background-color: rgba(148, 255, 157, 0.514);
-  box-shadow: 0 0 10px rgba(180, 255, 186, 0.918);
-}
-body .page-body .card .card-header .icon-container.yellow {
-  background-color: rgba(255, 253, 148, 0.514);
-  box-shadow: 0 0 10px rgba(255, 254, 180, 0.918);
-}
-body .page-body .card .card-header .card-icon {
-  width: 100%;
-}
 body .page-body .card .card-header .card-title {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 42px;
 }
 body .page-body .card .card-body {
   display: flex;
-  background-color: rgb(241, 241, 241);
   border-radius: 0.25rem;
   box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.08);
   margin-bottom: 16px;
@@ -311,7 +273,8 @@ body .page-footer {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  font-size: 12px;
+  padding: 8px;
 }
 
 @keyframes pulse-border {

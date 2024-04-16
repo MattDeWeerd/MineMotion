@@ -1,28 +1,19 @@
-$background: #e8e7e9;
-//$background: #232527;
-$background-light: rgb(241, 241, 241);
+$background: #171818;
+$background-light: #292b2b;
 $mm-red: #ff0000;
 $mm-gray: #e9ecee;
 $mm-green: #13aa52;
 $mm-green-hover: #109447;
-$divider: rgba(255, 255, 255, 0.12);
-//$text-primary: #e8e7e9;
-$text-primary: #232527;
-$text-secondary: #434547;
-$text-white: #fff;
+$text-primary: #fff;
+$text-secondary: #959595;
 
-$action-primary: #fff;
-$action-hover: rgba(255, 255, 255, 0.08);
-$action-selected: rgba(255, 255, 255, 0.16);
-$action-disabled: rgba(255, 255, 255, 0.3);
-$action-disabled-bg: rgba(255, 255, 255, 0.12);
-
-$font-1: Verdana;
+$font-1: Montserrat;
 
 $mobile-up: "only screen and (min-width: 480px)";
 $tablet-small-up: "only screen and (min-width: 504px)";
 $tablet-medium-up: "only screen and (min-width: 624px)";
 $tablet-large-up: "only screen and (min-width: 768px)";
+$desktop-small-up: "only screen and (min-width: 960px)";
 $desktop-up: "only screen and (min-width: 1024px)";
 
 html {
@@ -41,36 +32,34 @@ body {
   margin: 0;
   font-family: $font-1;
   color: $text-primary;
+  padding-top: 70px;
 
   .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    height: 100%;
     padding: 16px 0 0 0;
-
-    @media #{$tablet-medium-up} {
-      padding: 16px 8px;
-    }
+    background-color: $background;
 
     .header-content {
-      display: block;
-      width: 100%;
-      max-width: 1140px;
-      height: 100%;
-      margin: auto;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      align-items: center;
+      padding: 0 20px;
 
       @media #{$tablet-medium-up} {
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         vertical-align: middle;
       }
 
       .header_images {
+        display: flex;
         text-decoration: none;
-
-        @media #{$tablet-medium-up} {
-          display: flex;
-          align-self: center;
-        }
+        width: 300px;
 
         .mm-title-img {
           display: block;
@@ -82,7 +71,7 @@ body {
             display: none;
           }
 
-          @media #{$tablet-large-up} {
+          @media #{$desktop-small-up} {
             display: block;
             height: 45px;
           }
@@ -97,7 +86,7 @@ body {
             display: block;
           }
 
-          @media #{$tablet-large-up} {
+          @media #{$desktop-small-up} {
             display: none;
           }
         }
@@ -106,17 +95,12 @@ body {
       .nav-bar {
         display: block;
         width: fit-content;
-        margin: auto;
-        @media #{$tablet-large-up} {
-          display: flex;
-          align-self: center;
-          margin: 0;
-        }
+        margin: 8px auto 16px auto;
 
         .nav-list {
           display: flex;
           justify-content: space-between;
-          width: 310px;
+          width: 350px;
           list-style-type: none;
           margin: 0;
           padding: 0;
@@ -125,69 +109,66 @@ body {
             display: inline;
             font-weight: bold;
             font-size: 16px;
-            padding: 8px 16px;
             margin: 4px 0;
             border-radius: 8px;
-            transition: background-color 0.5s;
 
             @media #{$tablet-medium-up} {
               margin: 0;
             }
 
-            &:hover {
-              background-color: $mm-red;
-              transition: background-color 0.5s;
-            }
-
             a {
               color: $text-primary;
               text-decoration: none;
+              transition: color 0.5s;
+
+              &:hover {
+                color: $mm-red;
+                transition: color 0.5s;
+              }
             }
           }
         }
       }
 
       .contact-us {
-        display: block;
-        position: absolute;
-        margin: auto;
-        width: fit-content;
-        top: 8px;
-        right: 8px;
-
+        display: none;
+        
         @media #{$tablet-medium-up} {
-          position: relative;
-          top: unset;
-          right: unset;
-          margin: 0;
           display: flex;
-          align-self: flex-start;
-        }
-
-        .discord-member-count {
-          position: absolute;
-          left: -1px;
-          align-self: center;
-          background-color: $text-primary;
-          border-radius: 50%;
-          color: $mm-gray;
-          height: 18px;
-          width: 18px;
-          font-size: 8px;
-          text-align: center;
-          line-height: 16px;
-        }
-
-        .discord-icon {
-          width: 42px;
+          flex-direction: column;
+          align-content: end;
+          width: 300px;
+          margin: 0;
+          
         }
 
         .contact-us-link {
-          align-self: center;
+          align-self: flex-end;
           color: $text-primary;
           display: flex;
           font-weight: bold;
           text-decoration: none;
+
+          .discord-info {
+            position: relative;
+            .discord-member-count {
+              position: absolute;
+              left: -1px;
+              align-self: center;
+              background-color: #fff;
+              border-radius: 50%;
+              color: #000;
+              height: 18px;
+              width: 18px;
+              font-size: 8px;
+              text-align: center;
+              line-height: 16px;
+            }
+    
+            .discord-icon {
+              width: 42px;
+            }
+          }
         }
 
         .contact-us-text {
@@ -205,8 +186,6 @@ body {
   .page-body {
     overflow: auto;
     margin: auto;
-    max-width: 1140px;
-    padding: 32px;
 
     .splash {
       display: flex;
@@ -214,8 +193,8 @@ body {
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
-      margin: 48px auto;
-      //background-image: radial-gradient(50% 50%, rgba(13, 13, 13, 0), #0d0d0d);
+      margin: 76px auto 152px auto;
+      padding: 32px;
 
       .splash-image-wrapper {
         display: flex;
@@ -225,10 +204,10 @@ body {
 
       .splash-heading {
         text-align: center;
-        font-weight: bolder;
+        font-weight: bold;
         align-self: center;
         margin-bottom: 0;
-        font-size: 36px;
+        font-size: 40px;
         max-width: 775px;
         width: 100%;
       }
@@ -237,8 +216,9 @@ body {
         font-weight: normal;
         font-size: 20px;
         margin-top: 8px;
-        margin-bottom: 16px;
+        margin-bottom: 32px;
         width: 100%;
+        color: $text-secondary;
       }
 
       .button-wrapper {
@@ -251,11 +231,10 @@ body {
         .chat-with-us-wrapper {
           display: flex;
           text-decoration: none;
-          color: $text-white;
+          color: $text-primary;
           padding: 12px;
           border-radius: 8px;
           background-color: $mm-green;
-          border: 1px solid $mm-gray;
           animation: pulse-border 2s infinite;
           transition: background-color 0.3s;
 
@@ -276,11 +255,10 @@ body {
         .our-work-wrapper {
           display: flex;
           text-decoration: none;
-          color: $text-white;
+          color: $text-primary;
           padding: 12px;
           border-radius: 8px;
-          background-color: $text-secondary;
-          border: 1px solid $mm-gray;
+          background-color: $background-light;
           transition: background-color 0.3s;
 
           .our-work {
@@ -302,51 +280,27 @@ body {
     .card {
       display: flex;
       flex-direction: column;
+      align-items: center;
       margin-bottom: 32px;
+      padding: 16px;;
+    
+      &.light {
+        background-color: $background-light;
+      }
 
       .card-header {
         display: flex;
+        text-align: center;
         margin-bottom: 12px;
 
-        .icon-container {
-          width: 36px;
-          height: 36px;
-          margin-right: 12px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 8px;;
-    
-          &.blue {
-            background-color: rgba(148, 221, 255, 0.514);
-            box-shadow: 0 0 10px rgba(180, 231, 255, 0.918);
-          }
-
-          &.green {
-            background-color: rgba(148, 255, 157, 0.514);
-            box-shadow: 0 0 10px rgba(180, 255, 186, 0.918);
-          }
-
-          &.yellow {
-            background-color: rgba(255, 253, 148, 0.514);
-            box-shadow: 0 0 10px rgba(255, 254, 180, 0.918);
-          }
-        }
-
-        .card-icon {
-          width: 100%;
-        }
-        
         .card-title {
-          font-size: 24px;
-          line-height: 36px;
+          font-size: 42px;
           
         }
       }
 
       .card-body {
         display: flex;
-        background-color: $background-light;
         border-radius: 0.25rem;
         box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.08);
         margin-bottom: 16px;
@@ -359,7 +313,8 @@ body {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);    
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    font-size: 12px;
+    padding: 8px;
   }
 }
 
