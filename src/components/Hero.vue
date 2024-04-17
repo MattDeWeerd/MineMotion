@@ -4,7 +4,11 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    joinDiscord() {
+      window.open("https://discord.com/invite/3GJtxaeYhD", "_blank");
+    },
+  },
 };
 </script>
 
@@ -35,6 +39,7 @@ export default {
           label="Contact Us"
           icon="pi pi-discord"
           class="p-button"
+          @click="joinDiscord"
           rounded
         ></Button>
       </div>

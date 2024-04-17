@@ -4,7 +4,11 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    joinDiscord() {
+      window.open("https://discord.com/invite/3GJtxaeYhD", "_blank");
+    },
+  },
 };
 </script>
 
@@ -15,16 +19,16 @@ export default {
         <i class="pi pi-discord"></i>&nbsp;POWERED BY DISCORD
       </div>
       <div class="text-900 font-bold text-5xl mb-3">
-        Join Our Design Community
+        Join Our Discord Server
       </div>
       <div class="text-700 text-2xl mb-5">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam
-        eligendi quos.
+        We're always available if you have any questions!
       </div>
       <Button
         label="Join Now"
         icon="pi pi-discord"
         class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap"
+        @click="joinDiscord"
       ></Button>
     </div>
   </div>
