@@ -1,141 +1,14 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="main.css" />
-<html>
+<html lang="en">
   <head>
-    <title>MineMotion</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/MM_square.png" />
+    <link rel="stylesheet" href="https://unpkg.com/primeicons/primeicons.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MineMotion</title>
   </head>
   <body>
-    <div class="header">
-      <div class="header-content">
-        <a class="header_images" href="index.html">
-          <img class="mm-title-img" src="images/MineMotion_normal.png" />
-          <img class="mm-title-img-small" src="images/MM_normal.png" />
-        </a>
-
-        <div class="nav-bar">
-          <ul class="nav-list">
-            <li>
-              <a href="#ourWorkCard">Our Work</a>
-            </li>
-            <li>
-              <a href="#aboutCard">About Us</a>
-            </li>
-            <li>
-              <a href="#processCard">The Process</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="contact-us">
-          <a
-            class="contact-us-link"
-            target="_blank"
-            href="https://discord.gg/3GJtxaeYhD"
-          >
-            <div class="discord-info">
-              <div id="discordMemberCount" class="discord-member-count"></div>
-              <img class="discord-icon" src="./images/discord-icon.svg" />
-            </div>
-            <div class="contact-us-text">Contact Us</div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="page-body">
-      <div class="splash">
-        <h2 class="splash-heading">
-          We grow Minecraft Servers with Short-Form Video Content
-        </h2>
-        <h3 class="splash-subheading">
-          At MineMotion, we play the game, so we know the game.
-        </h3>
-        <div class="button-wrapper">
-          <a
-            class="chat-with-us-wrapper"
-            target="_blank"
-            href="https://discord.gg/3GJtxaeYhD"
-          >
-            <div class="chat-with-us">Chat With Us</div>
-            <img class="open-link-icon" src="/images/open-link-icon.svg" />
-          </a>
-
-          <a class="our-work-wrapper" href="#ourWork">
-            <div class="our-work">Our Work</div>
-            <img class="down-arrow-icon" src="/images/down-arrow-icon.svg" />
-          </a>
-        </div>
-      </div>
-
-      <div id="ourWorkCard" class="card light">
-        <div class="card-header">
-          <h2 class="card-title">Why MineMotion?</h2>
-        </div>
-        <div class="card-body">
-          <div class="selling-points-wrapper">
-            <div class="sp-card">
-              <h2 class="sp-title">We Play The Game</h2>
-              <img class="sp-image" src="/images/pickaxe-icon.png" /> 
-              <p class="sp-text">We are the players, which means we know what players want to see.</p>
-            </div>
-            <div class="sp-card">
-              <h2 class="sp-title">Customized To You</h2>
-              <img class="sp-image" src="/images/settings-gear.png" /> 
-              <p class="sp-text">Every server is unique, so your experience should be too.</p>
-            </div>
-            <div class="sp-card">
-              <h2 class="sp-title">We Build Your Community</h2>
-              <img class="sp-image" src="/images/community-icon.png" /> 
-              <p class="sp-text">Not only do we get views, we work to keep those players interested.</p>
-            </div>
-          </div>  
-        </div>
-        
-      </div>
-      
-      <div id="aboutCard" class="card">
-        <div class="card-header">
-          <h2 class="card-title">About Us</h2>
-        </div>
-        <div class="card-body">
-          <p>test</p>
-        </div>
-      </div>
-
-      <div id="processCard" class="card light">
-        <div class="card-header">
-          <h2 class="card-title">Process</h2>
-        </div>
-        <div class="card-body">
-          <p>test</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-footer">
-      We are not affiliated with Mojang, AB
-    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      async function getDiscordInfo() {
-        try {
-          const response = await fetch(
-            "https://discordapp.com/api/guilds/1228411337256734750/embed.json"
-          );
-          if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          const data = await response.json();
-          console.log(data);
-          const memberCount = data.presence_count;
-          document.getElementById("discordMemberCount").innerText = memberCount;
-        } catch (error) {
-          console.error("Failed to fetch Discord info:", error);
-        }
-      }
-      getDiscordInfo();
-    });
-  </script>
 </html>
