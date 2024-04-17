@@ -3,11 +3,12 @@
 <template>
   <Header></Header>
   <Hero></Hero>
+  <Features></Features>
   <Divider></Divider>
-  <Cards></Cards>
+  <CallToAction></CallToAction>
 </template>
 
-<style scoped>
+<style lang="scss">
 @media only screen and (min-width: 428px) {
 }
 

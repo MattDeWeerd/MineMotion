@@ -45,7 +45,6 @@ export default {
   justify-content: space-between;
   align-items: center;
   background-color: var(--surface-section);
-  width: 100vw;
   padding: 0 32px;
   height: 64px;
 
