@@ -54,8 +54,13 @@ export default {
   width: fit-content;
 
   .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 576px;
     .hero-name {
+      margin: auto;
+      width: 373px;
       height: 56px;
     }
     .hero-title {
@@ -64,6 +69,7 @@ export default {
       line-height: 64px;
       font-weight: 700;
       color: var(--text-color);
+      text-align: center;
     }
 
     .hero-subtitle {
@@ -72,10 +78,11 @@ export default {
       line-height: 36px;
       font-weight: 500;
       color: var(--text-secondary);
+      text-align: center;
     }
 
     .actions {
-      margin-top: 32px;
+      margin: 32px auto 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -142,6 +149,26 @@ export default {
   .hero-container {
     flex-direction: row;
     margin-top: 140px;
+
+    .main {
+      display: block;
+
+      .hero-name {
+        width: unset;
+      }
+
+      .hero-title {
+        text-align: left;
+      }
+
+      .hero-subtitle {
+        text-align: left;
+      }
+
+      .actions {
+        margin: 32px 0;
+      }
+    }
 
     .image {
       align-items: start;

@@ -2,16 +2,12 @@
 
 <template>
   <Header></Header>
-  <div class="page">
-    <Hero></Hero>
-  </div>
+  <Hero></Hero>
+  <Divider></Divider>
+  <Cards></Cards>
 </template>
 
 <style scoped>
-.page {
-  margin: auto 144px;
-}
-
 @media only screen and (min-width: 428px) {
 }
 
