@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 .hero-container {
-  margin: 64px auto 64px;
+  margin: 32px auto 64px;
   text-align: start;
   display: flex;
   flex-direction: column-reverse;
@@ -60,6 +60,7 @@ export default {
 
   .main {
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     max-width: 576px;
@@ -119,8 +120,8 @@ export default {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
       background: linear-gradient(90deg, #ff0000, #e9ecee);
       border-radius: 50%;
       filter: blur(72px);
@@ -128,7 +129,7 @@ export default {
     }
 
     .logo {
-      width: 100px;
+      width: 150px;
       z-index: 2;
       flex-shrink: 1;
     }
@@ -150,6 +151,7 @@ export default {
 
 @media only screen and (min-width: 624px) {
   .hero-container {
+    margin-top: 42px;
     .main {
       .hero-name {
         width: 373px;
@@ -187,6 +189,7 @@ export default {
 @media only screen and (min-width: 768px) {
   .hero-container {
     .main {
+      align-items: unset;
       .hero-title {
         padding-top: 0;
         font-size: 56px;

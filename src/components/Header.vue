@@ -22,7 +22,6 @@ export default {
 <template>
   <div class="header">
     <div class="logo-container">
-      <img src="/src/assets/MineMotion_normal.png" alt="Logo" class="logo" />
       <img src="/src/assets/MM_normal.png" alt="Logo" class="logo-sm" />
       <p class="name">MineMotion</p>
     </div>
@@ -49,21 +48,15 @@ export default {
   height: 64px;
 
   .logo-container {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
 
-    .logo,
     .logo-sm {
       height: 24px;
     }
 
-    .logo-sm {
-      display: none;
-    }
-
     .name {
-      display: none;
       font-weight: bold;
       margin-left: 8px;
     }
@@ -97,16 +90,7 @@ export default {
     padding: 0 32px;
 
     .logo-container {
-      .logo {
-        display: none;
-      }
-      .logo-sm {
-        display: block;
-      }
-
-      .name {
-        display: block;
-      }
+      display: flex;
     }
 
     .contact-us-container {
