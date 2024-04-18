@@ -1,11 +1,14 @@
-<script setup></script>
+<script setup>
+import VideoCarousel from "./components/VideoCarousel.vue";
+</script>
 
 <template>
   <Header></Header>
   <Hero></Hero>
-  <Features></Features>
+  <VideoCarousel></VideoCarousel>
   <Divider></Divider>
 
+  <Features></Features>
   <Divider></Divider>
   <CallToAction></CallToAction>
   <Footer></Footer>

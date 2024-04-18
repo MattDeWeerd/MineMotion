@@ -5,9 +5,9 @@ export default {
     return {
       // Define items for the TabMenu
       items: [
-        { label: "Home", icon: "pi pi-fw pi-home", to: "/" },
-        { label: "Products", icon: "pi pi-fw pi-calendar", to: "/products" },
-        { label: "About Us", icon: "pi pi-fw pi-file", to: "/about" },
+        { label: "Home", icon: "pi pi-fw pi-home", to: "#Hero" },
+        { label: "Our Work", icon: "pi pi-fw pi-calendar", to: "#OurWork" },
+        { label: "About Us", icon: "pi pi-fw pi-file", to: "#AboutUs" },
       ],
     };
   },
@@ -25,12 +25,20 @@ export default {
       <img src="/src/assets/MM_normal.png" alt="Logo" class="logo-sm" />
       <p class="name">MineMotion</p>
     </div>
-    <TabMenu :model="items" class="tab-menu" />
+    <TabMenu :model="items" class="tab-menu">
+      <template #item="slotProps">
+        <a :href="slotProps.item.to" class="p-menuitem-link">
+          <span :class="['pi', slotProps.item.icon, 'p-menuitem-icon']"></span>
+          <span class="p-menuitem-text">{{ slotProps.item.label }}</span>
+        </a>
+      </template>
+    </TabMenu>
     <div class="contact-us-container">
       <Button
         label="Contact Us"
         icon="pi pi-discord"
         class="p-button"
+        raised
         @click="joinDiscord"
       ></Button>
     </div>

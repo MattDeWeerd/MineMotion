@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <div class="features-container">
+  <div id="AboutUs" class="features-container">
     <div class="surface-section py-8 px-4 md:px-6 lg:px-8 text-center">
       <div class="mb-3 font-bold text-3xl">
         <span class="text-900">Creative Solutions, </span>

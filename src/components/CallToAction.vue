@@ -18,10 +18,10 @@ export default {
       <div class="text-red-600 font-bold mb-3">
         <i class="pi pi-discord"></i>&nbsp;POWERED BY DISCORD
       </div>
-      <div class="text-900 font-bold text-5xl mb-3">
+      <div class="text-800 font-bold text-5xl mb-3">
         Join Our Discord Server
       </div>
-      <div class="text-700 text-2xl mb-5">
+      <div class="text-600 text-2xl mb-5">
         We're always available if you have any questions!
       </div>
       <Button

@@ -8,6 +8,9 @@ export default {
     joinDiscord() {
       window.open("https://discord.com/invite/3GJtxaeYhD", "_blank");
     },
+    scrollToView(id) {
+      document.getElementById(id).scrollIntoView();
+    },
   },
 };
 </script>
@@ -22,18 +25,22 @@ export default {
         watch your server grow.
       </h2>
       <div class="actions">
-        <Button label="Get Started" class="p-button" rounded></Button>
+        <Button label="Get Started" class="p-button" rounded raised></Button>
         <Button
           label="Why MineMotion?"
           severity="secondary"
           class="p-button"
+          @click="scrollToView('AboutUs')"
           rounded
+          raised
         ></Button>
         <Button
           label="View our Work"
           severity="secondary"
           class="p-button"
           rounded
+          raised
+          @click="scrollToView('OurWork')"
         ></Button>
         <Button
           label="Contact Us"
@@ -41,6 +48,7 @@ export default {
           class="p-button"
           @click="joinDiscord"
           rounded
+          raised
         ></Button>
       </div>
     </div>
@@ -218,6 +226,7 @@ export default {
 
     .main {
       display: block;
+      margin-right: 200px;
 
       .hero-name {
         width: unset;
