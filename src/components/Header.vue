@@ -5,7 +5,7 @@ export default {
     return {
       // Define items for the TabMenu
       items: [
-        { label: "Home", icon: "pi pi-fw pi-home", to: "#Hero" },
+        { label: "Home", icon: "pi pi-fw pi-home", to: "#Home" },
         { label: "Our Work", icon: "pi pi-fw pi-calendar", to: "#OurWork" },
         { label: "About Us", icon: "pi pi-fw pi-file", to: "#AboutUs" },
       ],
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-  <div class="header">
+  <div id="Home" class="header">
     <div class="logo-container">
       <img src="/src/assets/MM_normal.png" alt="Logo" class="logo-sm" />
       <p class="name">MineMotion</p>

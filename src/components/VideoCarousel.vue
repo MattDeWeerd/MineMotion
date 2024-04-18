@@ -7,42 +7,42 @@ export default {
         {
           tumbnail: "Video_WantTheTruth_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMMXQhAWQ/",
-          viewCount: "0",
+          viewCount: "780.6K",
         },
         {
           tumbnail: "Video_MinecraftIsDying_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4dbPd4/",
-          viewCount: "0",
+          viewCount: "47.1K",
         },
         {
           tumbnail: "Video_AreYouTired_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4dCLWX/",
-          viewCount: "0",
+          viewCount: "30.7K",
         },
         {
           tumbnail: "Video_PigRace_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4Reh4F/",
-          viewCount: "0",
+          viewCount: "13.4K",
         },
         {
           tumbnail: "Video_IsntItCrazy_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4RYd8U/",
-          viewCount: "0",
+          viewCount: "14.8K",
         },
         {
           tumbnail: "Blank_Thumbnail.jpg",
-          videoLink: "https://minemotion.org",
-          viewCount: "0",
+          videoLink: "https://discord.com/invite/3GJtxaeYhD",
+          viewCount: "Your Video Next!",
         },
         {
           tumbnail: "Blank_Thumbnail.jpg",
-          videoLink: "https://minemotion.org",
-          viewCount: "0",
+          videoLink: "https://discord.com/invite/3GJtxaeYhD",
+          viewCount: "Your Video Next!",
         },
         {
           tumbnail: "Blank_Thumbnail.jpg",
-          videoLink: "https://minemotion.org",
-          viewCount: "0",
+          videoLink: "https://discord.com/invite/3GJtxaeYhD",
+          viewCount: "Your Video Next!",
         },
       ],
       responsiveOptions: [
@@ -85,7 +85,10 @@ export default {
 <template>
   <div id="OurWork" class="carousel-container">
     <div class="head">
-      <h1 class="title">Our Work</h1>
+      <h1 class="title">See What <span class="red">Growth</span> Looks Like</h1>
+      <h2 class="sub-title">
+        Samples projects to give you a glimpse of what we deliver
+      </h2>
     </div>
 
     <Carousel
@@ -134,6 +137,20 @@ export default {
 
   .head {
     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 48px;
+    margin-bottom: 20px;
+
+    .title {
+      .red {
+        color: var(--red-600);
+      }
+    }
+    .sub-title {
+      color: var(--surface-600);
+      font-weight: 500;
+    }
   }
 
   .post-wrapper {
@@ -179,6 +196,7 @@ export default {
       border-radius: 5px;
 
       .view-count-number {
+        margin-left: 4px;
       }
     }
 

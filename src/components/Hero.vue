@@ -25,12 +25,11 @@ export default {
         watch your server grow.
       </h2>
       <div class="actions">
-        <Button label="Get Started" class="p-button" rounded raised></Button>
         <Button
-          label="Why MineMotion?"
-          severity="secondary"
+          label="Get Started"
+          icon="pi pi-discord"
           class="p-button"
-          @click="scrollToView('AboutUs')"
+          @click="joinDiscord"
           rounded
           raised
         ></Button>
@@ -43,10 +42,10 @@ export default {
           @click="scrollToView('OurWork')"
         ></Button>
         <Button
-          label="Contact Us"
-          icon="pi pi-discord"
+          label="Why MineMotion?"
+          severity="secondary"
           class="p-button"
-          @click="joinDiscord"
+          @click="scrollToView('AboutUs')"
           rounded
           raised
         ></Button>
@@ -101,9 +100,8 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      width: 300px;
       flex-wrap: wrap;
+      gap: 10px;
 
       .p-button {
         border: none;
@@ -145,13 +143,6 @@ export default {
 }
 
 @media only screen and (min-width: 428px) {
-  .hero-container {
-    .main {
-      .actions {
-        width: 420px;
-      }
-    }
-  }
 }
 
 @media only screen and (min-width: 504px) {
@@ -176,8 +167,6 @@ export default {
       }
       .actions {
         width: 95%;
-        justify-content: space-between;
-        gap: unset;
       }
     }
     .image {
@@ -243,6 +232,7 @@ export default {
 
       .actions {
         margin: 32px 0;
+        justify-content: start;
       }
     }
 
