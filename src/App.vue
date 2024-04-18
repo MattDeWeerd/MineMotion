@@ -5,7 +5,7 @@
   <Hero></Hero>
   <Features></Features>
   <Divider></Divider>
-  <VideoCarousel></VideoCarousel>
+
   <Divider></Divider>
   <CallToAction></CallToAction>
   <Footer></Footer>

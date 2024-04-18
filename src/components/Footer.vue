@@ -10,9 +10,7 @@ export default {
 
 <template>
   <div class="footer-container">
-    <p-footer>
-      <span>We are not affiliated with Mojang, AB</span>
-    </p-footer>
+    <span>We are not affiliated with Mojang, AB</span>
   </div>
 </template>
 

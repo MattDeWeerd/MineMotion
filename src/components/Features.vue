@@ -117,8 +117,8 @@ export default {
 
 <style lang="scss" scoped>
 .features-container {
-  margin-left: 128px;
-  margin-right: 128px;
+  margin-left: 0;
+  margin-right: 0;
 
   .surface-card {
     background-color: var(--gray-800) !important;
@@ -131,14 +131,26 @@ export default {
 }
 
 @media only screen and (min-width: 624px) {
+  .features-container {
+    margin-left: 84px;
+    margin-right: 84px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  .features-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media only screen and (min-width: 990px) {
 }
 
 @media only screen and (min-width: 1024px) {
+  .features-container {
+    margin-left: 128px;
+    margin-right: 128px;
+  }
 }
 </style>

@@ -40,12 +40,12 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: var(--surface-section);
-  padding: 0 32px;
+  padding: 0;
   height: 64px;
 
   .logo-container {
@@ -81,6 +81,9 @@ export default {
 }
 
 @media only screen and (min-width: 428px) {
+  .header {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 504px) {
@@ -91,6 +94,7 @@ export default {
 @media only screen and (min-width: 768px) {
   .header {
     flex-direction: row;
+    padding: 0 32px;
 
     .logo-container {
       .logo {

@@ -65,13 +65,13 @@ export default {
     max-width: 576px;
     .hero-name {
       margin: auto;
-      width: 373px;
-      height: 56px;
+      width: 250px;
     }
     .hero-title {
-      margin: 0;
-      font-size: 56px;
-      line-height: 64px;
+      margin: 0 16px;
+      padding-top: 8px;
+      font-size: 40px;
+      line-height: 40px;
       font-weight: 700;
       color: var(--text-color);
       text-align: center;
@@ -79,9 +79,10 @@ export default {
 
     .hero-subtitle {
       padding-top: 12px;
-      font-size: 24px;
+      font-size: 20px;
       line-height: 36px;
       font-weight: 500;
+      margin: 0 32px;
       color: var(--text-secondary);
       text-align: center;
     }
@@ -90,8 +91,10 @@ export default {
       margin: 32px auto 0;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      width: 95%;
+      justify-content: center;
+      gap: 10px;
+      width: 300px;
+      flex-wrap: wrap;
 
       .p-button {
         border: none;
@@ -103,8 +106,8 @@ export default {
   }
 
   .image {
-    width: 560px;
-    margin-bottom: 100px;
+    max-width: 560px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,8 +119,8 @@ export default {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 200px;
-      height: 200px;
+      width: 100px;
+      height: 100px;
       background: linear-gradient(90deg, #ff0000, #e9ecee);
       border-radius: 50%;
       filter: blur(72px);
@@ -125,7 +128,7 @@ export default {
     }
 
     .logo {
-      width: 200px;
+      width: 100px;
       z-index: 2;
       flex-shrink: 1;
     }
@@ -133,15 +136,70 @@ export default {
 }
 
 @media only screen and (min-width: 428px) {
+  .hero-container {
+    .main {
+      .actions {
+        width: 420px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 504px) {
 }
 
 @media only screen and (min-width: 624px) {
+  .hero-container {
+    .main {
+      .hero-name {
+        width: 373px;
+        height: 56px;
+      }
+      .hero-title {
+        padding-top: 8px;
+        font-size: 32px;
+        line-height: 40px;
+      }
+      .hero-subtitle {
+        font-size: 20px;
+        margin-left: 32px;
+      }
+      .actions {
+        width: 95%;
+        justify-content: space-between;
+        gap: unset;
+      }
+    }
+    .image {
+      margin-bottom: 100px;
+
+      &::before {
+        width: 200px;
+        height: 200px;
+      }
+      .logo {
+        width: 200px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  .hero-container {
+    .main {
+      .hero-title {
+        padding-top: 0;
+        font-size: 56px;
+        line-height: 64px;
+      }
+      .hero-subtitle {
+        padding-top: 12px;
+        font-size: 24px;
+        line-height: 36px;
+        margin: unset;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 990px) {
@@ -163,6 +221,7 @@ export default {
       }
 
       .hero-title {
+        margin: 0;
         text-align: left;
       }
 
