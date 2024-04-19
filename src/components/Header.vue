@@ -22,7 +22,11 @@ export default {
 <template>
   <div id="Home" class="header">
     <div class="logo-container">
-      <img src="/src/assets/MM_normal.png" alt="Logo" class="logo-sm" />
+      <img
+        src="/src/assets/MM_normal.png"
+        alt="MineMotion Logo"
+        class="logo-sm"
+      />
       <p class="name">MineMotion</p>
     </div>
     <TabMenu :model="items" class="tab-menu">

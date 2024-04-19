@@ -18,7 +18,11 @@ export default {
 <template>
   <div class="hero-container">
     <div class="main">
-      <img class="hero-name" src="/src/assets/MineMotion_normal.png" />
+      <img
+        class="hero-name"
+        src="/src/assets/MineMotion_normal.png"
+        alt="MineMotion Logo"
+      />
       <h1 class="hero-title">Advertize Your Minecraft Server</h1>
       <h2 class="hero-subtitle">
         We play the game, so we know the game. Let us handle the hastle and
@@ -52,7 +56,11 @@ export default {
       </div>
     </div>
     <div class="image">
-      <img class="logo" src="/src/assets/MM_normal.png" />
+      <img
+        class="logo"
+        src="/src/assets/MM_normal.png"
+        alt="MineMotion Small Logo"
+      />
     </div>
   </div>
 </template>

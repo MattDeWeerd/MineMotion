@@ -5,41 +5,49 @@ export default {
     return {
       videos: [
         {
+          name: "Video With 780 thousand views",
           tumbnail: "Video_WantTheTruth_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMMXQhAWQ/",
           viewCount: "780.6K",
         },
         {
+          name: "Video With 47 thousand views",
           tumbnail: "Video_MinecraftIsDying_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4dbPd4/",
           viewCount: "47.1K",
         },
         {
+          name: "Video With 30 thousand views",
           tumbnail: "Video_AreYouTired_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4dCLWX/",
           viewCount: "30.7K",
         },
         {
+          name: "Video With 13 thousand views",
           tumbnail: "Video_PigRace_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4Reh4F/",
           viewCount: "13.4K",
         },
         {
+          name: "Video With 14 thousand views",
           tumbnail: "Video_IsntItCrazy_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4RYd8U/",
           viewCount: "14.8K",
         },
         {
+          name: "Empty Video Slot",
           tumbnail: "Blank_Thumbnail.jpg",
           videoLink: "https://discord.com/invite/3GJtxaeYhD",
           viewCount: "Your Video Next!",
         },
         {
+          name: "Empty Video Slot",
           tumbnail: "Blank_Thumbnail.jpg",
           videoLink: "https://discord.com/invite/3GJtxaeYhD",
           viewCount: "Your Video Next!",
         },
         {
+          name: "Empty Video Slot",
           tumbnail: "Blank_Thumbnail.jpg",
           videoLink: "https://discord.com/invite/3GJtxaeYhD",
           viewCount: "Your Video Next!",
