@@ -74,6 +74,17 @@ export default {
       ],
     };
   },
+  computed: {
+    videosWithResolvedPaths() {
+      return this.videos.map((video) => ({
+        ...video,
+        resolvedThumbnail: new URL(
+          `../assets/${video.tumbnail}`,
+          import.meta.url
+        ).href,
+      }));
+    },
+  },
   methods: {
     openVideo(url) {
       window.open(url, "_blank");
@@ -92,7 +103,7 @@ export default {
     </div>
 
     <Carousel
-      :value="videos"
+      :value="videosWithResolvedPaths"
       :numVisible="5"
       :numScroll="1"
       :responsiveOptions="responsiveOptions"
@@ -106,7 +117,7 @@ export default {
         >
           <div class="post-wrapper">
             <img
-              :src="'/src/assets/' + slotProps.data.tumbnail"
+              :src="slotProps.data.resolvedThumbnail"
               :alt="slotProps.data.name"
               class="w-full border-round"
             />
