@@ -150,7 +150,6 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin-left: 48px;
     margin-bottom: 20px;
 
     .title {
