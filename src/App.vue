@@ -10,6 +10,8 @@ import VideoCarousel from "./components/VideoCarousel.vue";
 
   <Features></Features>
   <Divider></Divider>
+  <Prices></Prices>
+  <Divider></Divider>
   <CallToAction></CallToAction>
   <Footer></Footer>
 </template>

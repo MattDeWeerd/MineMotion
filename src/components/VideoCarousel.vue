@@ -116,7 +116,6 @@ export default {
       :numScroll="1"
       :responsiveOptions="responsiveOptions"
       circular
-      :autoplayInterval="3000"
     >
       <template #item="slotProps">
         <div
@@ -150,7 +149,7 @@ export default {
 
 <style lang="scss" scoped>
 .carousel-container {
-  padding: 128px 0;
+  padding: 32px 0;
   margin: auto;
   width: 90%;
 
@@ -158,6 +157,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    text-align: center;
     margin-bottom: 20px;
 
     .title {
@@ -244,5 +244,8 @@ export default {
 }
 
 @media only screen and (min-width: 1250px) {
+  .carousel-container {
+    padding: 80px 0;
+  }
 }
 </style>

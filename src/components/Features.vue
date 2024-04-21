@@ -15,7 +15,7 @@ export default {
         <span class="text-900">Creative Solutions, </span>
         <span class="text-red-600">Dynamic Results</span>
       </div>
-      <div class="text-700 mb-6">
+      <div class="text-700 text-xl mb-6">
         At MineMotion, we craft compelling content that transforms how players
         see your Minecraft server.
       </div>

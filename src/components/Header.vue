@@ -5,9 +5,13 @@ export default {
     return {
       // Define items for the TabMenu
       items: [
-        { label: "Home", icon: "pi pi-fw pi-home", to: "#Home" },
-        { label: "Our Work", icon: "pi pi-fw pi-calendar", to: "#OurWork" },
-        { label: "About Us", icon: "pi pi-fw pi-file", to: "#AboutUs" },
+        { label: "Our Work", icon: "pi pi-fw pi-video", to: "#OurWork" },
+        { label: "About Us", icon: "pi pi-fw pi-users", to: "#AboutUs" },
+        {
+          label: "Get Started",
+          icon: "pi pi-fw pi-chart-line",
+          to: "#OurPackages",
+        },
       ],
     };
   },

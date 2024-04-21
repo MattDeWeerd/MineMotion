@@ -31,18 +31,15 @@ export default {
       <div class="actions">
         <Button
           label="Get Started"
-          icon="pi pi-discord"
           class="p-button"
-          @click="joinDiscord"
           rounded
-          raised
+          @click="scrollToView('OurPackages')"
         ></Button>
         <Button
           label="View our Work"
           severity="secondary"
           class="p-button"
           rounded
-          raised
           @click="scrollToView('OurWork')"
         ></Button>
         <Button
@@ -51,7 +48,13 @@ export default {
           class="p-button"
           @click="scrollToView('AboutUs')"
           rounded
-          raised
+        ></Button>
+        <Button
+          label="Contact Us"
+          icon="pi pi-discord"
+          class="p-button"
+          @click="joinDiscord"
+          rounded
         ></Button>
       </div>
     </div>
@@ -109,7 +112,8 @@ export default {
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 7px;
+      width: 300px;
 
       .p-button {
         border: none;
