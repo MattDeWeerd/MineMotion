@@ -35,10 +35,10 @@ export default {
           viewCount: "14.8K",
         },
         {
-          name: "Empty Video Slot",
-          tumbnail: "Blank_Thumbnail.jpg",
-          videoLink: "https://discord.com/invite/3GJtxaeYhD",
-          viewCount: "Your Video Next!",
+          name: "Video With 2 thousand views",
+          tumbnail: "Video_AshesOfHeaven_Thumbnail.jpg",
+          videoLink: "https://vm.tiktok.com/ZMMbqRPrk/",
+          viewCount: "2K",
         },
         {
           name: "Empty Video Slot",
