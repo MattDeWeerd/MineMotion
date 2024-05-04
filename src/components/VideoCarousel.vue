@@ -38,7 +38,7 @@ export default {
           name: "Video With 2 thousand views",
           tumbnail: "Video_AshesOfHeaven_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMMbqRPrk/",
-          viewCount: "2K",
+          viewCount: "2.6K",
         },
         {
           name: "Empty Video Slot",
