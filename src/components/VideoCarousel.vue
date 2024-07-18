@@ -11,6 +11,12 @@ export default {
           viewCount: "780.6K",
         },
         {
+          name: "Video With 170 thousand views",
+          tumbnail: "Video_Minecafe_NDB_Thumbnail.jpg",
+          videoLink: "https://vm.tiktok.com/ZMraXkr5b/",
+          viewCount: "170.6K",
+        },
+        {
           name: "Video With 47 thousand views",
           tumbnail: "Video_MinecraftIsDying_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4dbPd4/",
@@ -23,28 +29,22 @@ export default {
           viewCount: "30.7K",
         },
         {
+          name: "Video With 27 thousand views",
+          tumbnail: "Video_Minecafe_2_Thumbnail.jpg",
+          videoLink: "https://vm.tiktok.com/ZMraXR29W/",
+          viewCount: "27.5K",
+        },
+        {
           name: "Video With 13 thousand views",
           tumbnail: "Video_PigRace_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4Reh4F/",
           viewCount: "13.4K",
         },
         {
-          name: "Video With 14 thousand views",
-          tumbnail: "Video_IsntItCrazy_Thumbnail.jpg",
-          videoLink: "https://vm.tiktok.com/ZMM4RYd8U/",
-          viewCount: "14.8K",
-        },
-        {
-          name: "Video With 2 thousand views",
-          tumbnail: "Video_AshesOfHeaven_Thumbnail.jpg",
-          videoLink: "https://vm.tiktok.com/ZMMbqRPrk/",
-          viewCount: "2.6K",
-        },
-        {
-          name: "Empty Video Slot",
-          tumbnail: "Blank_Thumbnail.jpg",
-          videoLink: "https://discord.com/invite/3GJtxaeYhD",
-          viewCount: "Your Video Next!",
+          name: "Video With 12 thousand views",
+          tumbnail: "Video_MegaCraft_Thumbnail.jpg",
+          videoLink: "https://vm.tiktok.com/ZMraX5jh4/",
+          viewCount: "12.7K",
         },
         {
           name: "Empty Video Slot",
