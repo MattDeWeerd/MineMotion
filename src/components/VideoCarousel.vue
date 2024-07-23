@@ -5,16 +5,16 @@ export default {
     return {
       videos: [
         {
-          name: "Video With 780 thousand views",
+          name: "Video With 784 thousand views",
           tumbnail: "Video_WantTheTruth_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMMXQhAWQ/",
-          viewCount: "780.6K",
+          viewCount: "784.6K",
         },
         {
-          name: "Video With 170 thousand views",
+          name: "Video With 452 thousand views",
           tumbnail: "Video_Minecafe_NDB_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMraXkr5b/",
-          viewCount: "170.6K",
+          viewCount: "452.1K",
         },
         {
           name: "Video With 47 thousand views",
@@ -29,10 +29,10 @@ export default {
           viewCount: "30.7K",
         },
         {
-          name: "Video With 27 thousand views",
+          name: "Video With 50.3 thousand views",
           tumbnail: "Video_Minecafe_2_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMraXR29W/",
-          viewCount: "27.5K",
+          viewCount: "50.3K",
         },
         {
           name: "Video With 13 thousand views",
