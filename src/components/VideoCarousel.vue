@@ -11,10 +11,16 @@ export default {
           viewCount: "784.6K",
         },
         {
-          name: "Video With 452 thousand views",
+          name: "Video With 777 thousand views",
           tumbnail: "Video_Minecafe_NDB_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMraXkr5b/",
-          viewCount: "452.1K",
+          viewCount: "777.5K",
+        },
+        {
+          name: "Video With 93.3 thousand views",
+          tumbnail: "Video_Minecafe_2_Thumbnail.jpg",
+          videoLink: "https://vm.tiktok.com/ZMraXR29W/",
+          viewCount: "93.3K",
         },
         {
           name: "Video With 47 thousand views",
@@ -29,13 +35,7 @@ export default {
           viewCount: "30.7K",
         },
         {
-          name: "Video With 50.3 thousand views",
-          tumbnail: "Video_Minecafe_2_Thumbnail.jpg",
-          videoLink: "https://vm.tiktok.com/ZMraXR29W/",
-          viewCount: "50.3K",
-        },
-        {
-          name: "Video With 13 thousand views",
+          name: "Video With 13 thousand views",s
           tumbnail: "Video_PigRace_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4Reh4F/",
           viewCount: "13.4K",
