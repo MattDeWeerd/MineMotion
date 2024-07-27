@@ -34,7 +34,7 @@ export default {
             <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
             <div class="price-container">
               <div class="price-spans">
-                <span class="price font-bold text-2xl text-900">$25</span>
+                <span class="price font-bold text-2xl text-900">$30</span>
                 <span class="per-video ml-2 font-medium text-600"
                   >per video</span
                 >
@@ -77,7 +77,7 @@ export default {
             <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
             <div class="price-container">
               <div class="price-spans">
-                <span class="price font-bold text-2xl text-900">$22</span>
+                <span class="price font-bold text-2xl text-900">$27</span>
                 <span class="per-video ml-2 font-medium text-600"
                   >per video</span
                 >
@@ -127,7 +127,7 @@ export default {
             <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
             <div class="price-container">
               <div class="price-spans">
-                <span class="price font-bold text-2xl text-900">$20</span>
+                <span class="price font-bold text-2xl text-900">$24</span>
                 <span class="per-video ml-2 font-medium text-600"
                   >per video</span
                 >
