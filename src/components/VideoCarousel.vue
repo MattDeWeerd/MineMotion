@@ -35,7 +35,7 @@ export default {
           viewCount: "30.7K",
         },
         {
-          name: "Video With 13 thousand views",s
+          name: "Video With 13 thousand views",
           tumbnail: "Video_PigRace_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4Reh4F/",
           viewCount: "13.4K",
