@@ -5,28 +5,28 @@ export default {
     return {
       videos: [
         {
-          name: "Video With 784 thousand views",
-          tumbnail: "Video_WantTheTruth_Thumbnail.jpg",
-          videoLink: "https://vm.tiktok.com/ZMMXQhAWQ/",
-          viewCount: "784.6K",
-        },
-        {
-          name: "Video With 777 thousand views",
+          name: "Video With 1.4 million views",
           tumbnail: "Video_Minecafe_NDB_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMraXkr5b/",
-          viewCount: "777.5K",
+          viewCount: "1.4M",
         },
         {
-          name: "Video With 93.3 thousand views",
+          name: "Video With 787 thousand views",
+          tumbnail: "Video_WantTheTruth_Thumbnail.jpg",
+          videoLink: "https://vm.tiktok.com/ZMMXQhAWQ/",
+          viewCount: "787.9K",
+        },
+        {
+          name: "Video With 275.1 thousand views",
           tumbnail: "Video_Minecafe_2_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMraXR29W/",
-          viewCount: "93.3K",
+          viewCount: "275.1K",
         },
         {
           name: "Video With 47 thousand views",
           tumbnail: "Video_MinecraftIsDying_Thumbnail.jpg",
           videoLink: "https://vm.tiktok.com/ZMM4dbPd4/",
-          viewCount: "47.1K",
+          viewCount: "47.4K",
         },
         {
           name: "Video With 30 thousand views",
